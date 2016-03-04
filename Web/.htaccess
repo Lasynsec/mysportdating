@@ -1,0 +1,8 @@
+RewriteEngine On
+
+# Tous les URL commençant par admin pointent vers le repertoire Backend
+RewriteRule ^admin/ bootstrap.php?app=Backend [QSA,L]
+
+# Tous les URL pointent vers le répertoire Frontend
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ bootstrap.php?app=Frontend [QSA,L]
