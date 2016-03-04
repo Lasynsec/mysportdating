@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<routes>
+	<route url="/" module="Addressbook" action="index" />
+	<route url="/researchcontact" module="Addressbook" action="researchcontact"></route>
+	<route url="/registercontact" module="Addressbook" action="registercontact"></route>
+</routes>
